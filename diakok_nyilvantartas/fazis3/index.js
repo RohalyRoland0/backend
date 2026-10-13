@@ -23,13 +23,13 @@ connection.connect((err) => {
       return;
     }
     console.log("Siker");
-  });
+});
 
   app.get('/', (req, res) => {
     res.json({
         uzenet: 'Kezdő Iskolai REST API fut',
     });
-  });
+});
   
 app.get('/api/osztalyok', (req, res) => {
     connection.query(
